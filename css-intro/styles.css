@@ -40,4 +40,11 @@ h1 {
 	text-decoration: underline;
 }
 
+/*----------  Box Model Challenge  ----------*/
+
+.card {
+	background-color: rgb(231, 99, 160);
+	padding-top: 3px;
+}
+
 /*=====  End of Class Selectors  ======*/
