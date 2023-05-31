@@ -24,3 +24,13 @@ h1 + p ~ p {
 }
 
 /*=====  End of First section  ======*/
+
+/*=============================================
+=            Second Section            =
+=============================================*/
+
+h2 ~ p {
+	text-decoration: underline;
+}
+
+/*=====  End of Second Section  ======*/
