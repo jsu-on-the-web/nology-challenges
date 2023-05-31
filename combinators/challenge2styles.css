@@ -1,0 +1,15 @@
+p {
+	margin-left: 3vw;
+}
+
+#firstSection > h1 {
+	font-size: 36pt;
+}
+
+h1 + p {
+	font-style: italic;
+}
+
+h1 + p ~ p {
+	color: darkgray;
+}
