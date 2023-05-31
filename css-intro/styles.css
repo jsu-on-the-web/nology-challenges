@@ -63,4 +63,8 @@ h1 {
 	font-size: 24pt;
 }
 
+.card-content {
+	padding-left: 25px;
+}
+
 /*=====  End of Class Selectors  ======*/
