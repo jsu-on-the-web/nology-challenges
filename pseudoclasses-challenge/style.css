@@ -1,0 +1,18 @@
+/*=============================================
+=            First Challenge           =
+=============================================*/
+
+/*----------  General Selectors  ----------*/
+
+input[type="text"],
+button {
+	border-radius: 5px;
+}
+
+/*----------  ID Selectors  ----------*/
+
+#inputEnabled {
+	background-color: hsl(220.7, 61.5%, 63.3%);
+}
+
+/*=====  End of ID Selectors  ======*/
