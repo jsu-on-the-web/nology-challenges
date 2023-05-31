@@ -18,6 +18,7 @@ button {
 input:required {
 	background-color: hsl(220.7, 61.5%, 63.3%);
 	border-color: red;
+	border-style: solid;
 }
 
 /*=====  End of ID Selectors  ======*/
