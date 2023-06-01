@@ -14,6 +14,7 @@ main {
 	display: flex;
 	width: 900px;
 	height: 300px;
+	flex-wrap: wrap;
 }
 
 main div {
@@ -34,6 +35,10 @@ main div {
 
 .card-pink {
 	background-color: #ff69b4;
+}
+
+.card-red {
+	background-color: #dc143c;
 }
 
 /*=====  End of Challenge 1  ======*/
