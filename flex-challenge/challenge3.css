@@ -20,6 +20,7 @@ main {
 	height: 300px;
 	align-items: center;
 	align-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
