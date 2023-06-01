@@ -12,6 +12,20 @@ main div {
 	height: 100%;
 	width: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-blue {
+	background-color: #add8e6;
+}
+
+.card-orange {
+	background-color: #ffa500;
+}
+
+.card-pink {
+	background-color: #ff69b4;
 }
 
 /*=====  End of Challenge 1  ======*/
