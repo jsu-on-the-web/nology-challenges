@@ -1,19 +1,31 @@
-
 /*=============================================
 =            Header section            =
 =============================================*/
 
 header {
-    .sectionone {
-        border: green 3px dashed;
-        &__paragraph--bluestrike {
-            color: blue;
-            text-decoration: line-through;
-        }
-    }
+	.sectionone {
+		border: green 3px dashed;
+		&__paragraph {
+			&--bluestrike {
+				color: blue;
+				text-decoration: line-through;
+			}
+		}
+	}
 
+	.sectiontwo {
+		border: coral 2px solid;
+		h2 {
+			text-align: center;
+		}
+		&__paragraph {
+			&--bluestrikeright {
+				color: blue;
+				text-decoration: line-through;
+				text-align: right;
+			}
+		}
+	}
 }
 
-
 /*=====  End of Header section  ======*/
-

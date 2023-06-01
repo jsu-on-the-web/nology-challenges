@@ -8,6 +8,17 @@ header .sectionone__paragraph--bluestrike {
   color: blue;
   text-decoration: line-through;
 }
+header .sectiontwo {
+  border: coral 2px solid;
+}
+header .sectiontwo h2 {
+  text-align: center;
+}
+header .sectiontwo__paragraph--bluestrikeright {
+  color: blue;
+  text-decoration: line-through;
+  text-align: right;
+}
 
 /*=====  End of Header section  ======*/
 
