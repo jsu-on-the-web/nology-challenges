@@ -1,14 +1,10 @@
-
 /*=============================================
 =            Header section            =
 =============================================*/
-
-header {
-    .section--one {
-        border: green 3px dashed;
-    }
+header .section--one {
+  border: green 3px dashed;
 }
-
 
 /*=====  End of Header section  ======*/
 
+/*# sourceMappingURL=styles.css.map */
