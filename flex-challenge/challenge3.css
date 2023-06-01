@@ -1,0 +1,55 @@
+/*=============================================
+=            Challenge 3            =
+=============================================*/
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	width: 900px;
+	height: 300px;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card {
+	height: 100%;
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.blue {
+	background-color: #add8e6;
+}
+
+.orange {
+	background-color: #ffa500;
+}
+
+.pink {
+	background-color: #ff69b4;
+}
+
+.red {
+	background-color: #dc143c;
+}
+
+.green {
+	background-color: #90ee90;
+}
+
+/*=====  End of Challenge 1  ======*/
