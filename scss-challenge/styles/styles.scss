@@ -3,6 +3,7 @@
 =============================================*/
 
 header {
+	margin-bottom: 100px;
 	.sectionone {
 		border: green 3px dashed;
 		&__paragraph {
@@ -29,3 +30,15 @@ header {
 }
 
 /*=====  End of Header section  ======*/
+
+/*=============================================
+=            Main Section            =
+=============================================*/
+
+main {
+	section {
+		border: black 2px solid;
+	}
+}
+
+/*=====  End of Main Section  ======*/

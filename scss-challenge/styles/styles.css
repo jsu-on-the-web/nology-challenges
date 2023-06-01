@@ -1,6 +1,9 @@
 /*=============================================
 =            Header section            =
 =============================================*/
+header {
+  margin-bottom: 100px;
+}
 header .sectionone {
   border: green 3px dashed;
 }
@@ -21,5 +24,13 @@ header .sectiontwo__paragraph--bluestrikeright {
 }
 
 /*=====  End of Header section  ======*/
+/*=============================================
+=            Main Section            =
+=============================================*/
+main section {
+  border: black 2px solid;
+}
+
+/*=====  End of Main Section  ======*/
 
 /*# sourceMappingURL=styles.css.map */
