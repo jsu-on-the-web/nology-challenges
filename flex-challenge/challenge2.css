@@ -18,7 +18,7 @@ main {
 	flex-wrap: wrap;
 }
 
-main div {
+.card {
 	height: 100%;
 	width: 33%;
 	display: flex;
@@ -26,19 +26,19 @@ main div {
 	justify-content: center;
 }
 
-.card-blue {
+.blue {
 	background-color: #add8e6;
 }
 
-.card-orange {
+.orange {
 	background-color: #ffa500;
 }
 
-.card-pink {
+.pink {
 	background-color: #ff69b4;
 }
 
-.card-red {
+.red {
 	background-color: #dc143c;
 }
 
