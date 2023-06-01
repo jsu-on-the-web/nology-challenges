@@ -4,9 +4,14 @@
 =============================================*/
 
 header {
-    .section--one {
+    .sectionone {
         border: green 3px dashed;
+        &__paragraph--bluestrike {
+            color: blue;
+            text-decoration: line-through;
+        }
     }
+
 }
 
 

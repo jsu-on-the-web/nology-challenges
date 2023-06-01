@@ -1,8 +1,12 @@
 /*=============================================
 =            Header section            =
 =============================================*/
-header .section--one {
+header .sectionone {
   border: green 3px dashed;
+}
+header .sectionone__paragraph--bluestrike {
+  color: blue;
+  text-decoration: line-through;
 }
 
 /*=====  End of Header section  ======*/
