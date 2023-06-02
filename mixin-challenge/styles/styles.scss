@@ -18,6 +18,8 @@
 }
 
 .sectiontwo {
+	@include section--bordered(blue, solid);
+	@include section__paragraph;
 }
 
 /*=====  End of Main Section  ======*/
