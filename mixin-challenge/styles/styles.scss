@@ -1,0 +1,41 @@
+/*=============================================
+=            Main Section            =
+=============================================*/
+
+@mixin section--bordered($borderColour, $borderStyle) {
+	border: 2px $borderStyle $borderColour;
+}
+
+@mixin section__paragraph {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-around;
+
+	section {
+		margin: 2vh 3vw;
+	}
+}
+
+.sectionone {
+	@include section--bordered(red, dotted);
+	@include section__paragraph;
+}
+
+.sectiontwo {
+	@include section--bordered(blue, solid);
+	@include section__paragraph;
+}
+
+.sectionthree {
+	@include section--bordered(blue, dashed);
+	@include section__paragraph;
+}
+
+/*=====  End of Main Section  ======*/
