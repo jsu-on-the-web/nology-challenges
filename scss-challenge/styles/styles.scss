@@ -39,6 +39,20 @@ main {
 	section {
 		border: black 2px solid;
 	}
+	h2 {
+		font-family: Arial, Helvetica, sans-serif;
+		color: blue;
+	}
+}
+
+.mainsection {
+	&__paragraph {
+		&--redline {
+			font-family: Arial, Helvetica, sans-serif;
+			color: red;
+			text-decoration: underline;
+		}
+	}
 }
 
 /*=====  End of Main Section  ======*/

@@ -30,6 +30,16 @@ header .sectiontwo__paragraph--bluestrikeright {
 main section {
   border: black 2px solid;
 }
+main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+}
+
+.mainsection__paragraph--redline {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  text-decoration: underline;
+}
 
 /*=====  End of Main Section  ======*/
 
