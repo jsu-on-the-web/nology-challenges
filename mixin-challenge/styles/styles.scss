@@ -12,6 +12,13 @@
 	font-weight: bold;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
 .sectionone {
 	@include section--bordered(red, dotted);
 	@include section__paragraph;

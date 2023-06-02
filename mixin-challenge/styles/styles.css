@@ -1,6 +1,13 @@
 /*=============================================
 =            Main Section            =
 =============================================*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
 .sectionone {
   border: 2px dotted red;
   text-align: center;
