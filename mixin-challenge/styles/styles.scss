@@ -2,7 +2,7 @@
 =            Main Section            =
 =============================================*/
 
-@mixin section-with-border($borderColour, $borderStyle) {
+@mixin section--bordered($borderColour, $borderStyle) {
 	border: 2px $borderStyle $borderColour;
 }
 
@@ -13,8 +13,11 @@
 }
 
 .sectionone {
-	@include section-with-border(red, dotted);
+	@include section--bordered(red, dotted);
 	@include section__paragraph;
+}
+
+.sectiontwo {
 }
 
 /*=====  End of Main Section  ======*/
