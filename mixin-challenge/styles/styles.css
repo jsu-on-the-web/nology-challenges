@@ -1,3 +1,13 @@
+/*=============================================
+=            Main Section            =
+=============================================*/
+.sectionone {
+  border: 2px dotted red;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
 
+/*=====  End of Main Section  ======*/
 
 /*# sourceMappingURL=styles.css.map */

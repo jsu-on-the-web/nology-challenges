@@ -1,0 +1,20 @@
+/*=============================================
+=            Main Section            =
+=============================================*/
+
+@mixin section-with-border($borderColour, $borderStyle) {
+	border: 2px $borderStyle $borderColour;
+}
+
+@mixin section__paragraph {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.sectionone {
+	@include section-with-border(red, dotted);
+	@include section__paragraph;
+}
+
+/*=====  End of Main Section  ======*/
