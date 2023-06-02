@@ -22,6 +22,13 @@ main {
   font-weight: bold;
 }
 
+.sectionthree {
+  border: 2px dashed blue;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 /*=====  End of Main Section  ======*/
 
 /*# sourceMappingURL=styles.css.map */

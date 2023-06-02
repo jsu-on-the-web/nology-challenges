@@ -29,4 +29,9 @@ main {
 	@include section__paragraph;
 }
 
+.sectionthree {
+	@include section--bordered(blue, dashed);
+	@include section__paragraph;
+}
+
 /*=====  End of Main Section  ======*/
