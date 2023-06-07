@@ -36,6 +36,10 @@ const basketballPointsTotal = function (twoPointers, threePointers) {
     return twoPointers * 2 + threePointers * 3;
 }
 
+const lessThan100 = function (numberOne, numberTwo) {
+    return numberOne + numberTwo < 100 ? true : false;
+}
+
 /*----------  Variable Declaration  ----------*/
 
 let r = 5;
@@ -47,6 +51,9 @@ let n2 = 5;
 
 let twoPointers = 5;
 let threePointers = 2;
+
+let n3 = 75;
+let n4 = 24;
 
 
 /*----------  Script assignment  ----------*/
@@ -61,3 +68,5 @@ console.log(`You're ${myAge} years old, so that means you're ${ageInDays(myAge)}
 console.log(`If you divide ${n1} by ${n2}, you'll get ${remainder(n1, n2)} as a remainder.`);
 
 console.log(`Your team scored ${twoPointers} two-pointers and ${threePointers} three-pointers, netting you a total of ${basketballPointsTotal(twoPointers, threePointers)} points.`);
+
+console.log(`Is the sum of ${n3} and ${n4} less than 100? It equals ${n3 + n4}, so ${lessThan100(n3, n4)}.`);
