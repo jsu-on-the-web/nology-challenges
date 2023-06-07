@@ -8,7 +8,7 @@ const moonOrbits = function (earthDays) {
     // if (earthDays % moonOrbitPeriod === 0) return totalOrbits;
     // else return totalOrbits.toFixed(3);
 
-    return earthDays % moonOrbitPeriod === 0 ? totalOrbits : totalOrbits.toFixed(3);
+    return earthDays % moonOrbitPeriod === 0 ? totalOrbits : parseFloat(totalOrbits.toFixed(3));
 
 }
 
@@ -56,7 +56,7 @@ let n3 = 75;
 let n4 = 24;
 
 
-/*----------  Script assignment  ----------*/
+// /*----------  Script assignment  ----------*/
 
 
 console.log(`The moon will orbit around the earth around ${moonOrbits(earthDays)} times in ${earthDays} days.`);
