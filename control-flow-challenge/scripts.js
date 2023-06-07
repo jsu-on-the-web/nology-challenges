@@ -111,4 +111,18 @@ switch (parentEyecolours) {
 
 console.log(`You and your partner have ${parent1.eyeColour} and ${parent2.eyeColour} eyes. So your child will have a ${blueChance}% chance of having blue eyes, a ${greenChance}% chance of having green eyes, and a ${brownChance}% chance of having brown eyes.`);
 
-// child.eyeColour = Math.random() * 100; // Random number between 0 and 100, excluding 100.
+// cchild.eyeColour = Math.random() * 100; // Random number between 0 and 100, excluding 100.
+
+child.eyeColour = "brown";
+
+switch (child.eyeColour) {
+    case "brown":
+        console.log("Your child has brown eyes! That's pretty common.");
+        break;
+    case "green":
+        console.log("Your child has green eyes! That's pretty rare.");
+        break;
+    case "blue":
+        console.log("Your child has blue eyes! That's pretty uncommon.");
+        break;
+}
