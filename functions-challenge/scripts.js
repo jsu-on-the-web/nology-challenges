@@ -32,6 +32,10 @@ const remainder = function (numberOne, numberTwo) {
     return numberOne % numberTwo;
 }
 
+const basketballPointsTotal = function (twoPointers, threePointers) {
+    return twoPointers * 2 + threePointers * 3;
+}
+
 /*----------  Variable Declaration  ----------*/
 
 let r = 5;
@@ -40,6 +44,9 @@ let myAge = 22;
 
 let n1 = 24;
 let n2 = 5;
+
+let twoPointers = 5;
+let threePointers = 2;
 
 
 /*----------  Script assignment  ----------*/
@@ -52,3 +59,5 @@ console.log(`The circle's radius is ${r}, so its area is about ${circleArea(r)} 
 console.log(`You're ${myAge} years old, so that means you're ${ageInDays(myAge)} days old and ${ageInSeconds(myAge)} seconds old.`);
 
 console.log(`If you divide ${n1} by ${n2}, you'll get ${remainder(n1, n2)} as a remainder.`);
+
+console.log(`Your team scored ${twoPointers} two-pointers and ${threePointers} three-pointers, netting you a total of ${basketballPointsTotal(twoPointers, threePointers)} points.`);
