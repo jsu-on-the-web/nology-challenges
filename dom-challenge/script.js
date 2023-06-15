@@ -1,6 +1,7 @@
 /*----------  Function Declaration  ----------*/
 const pubCheck = function (age, country, drunkLevel) {
     let canEnterPub = false;
+    document.removeChild(message);
 
     // First is the country check since different countries have different drinking ages
     switch (country) {
@@ -19,6 +20,9 @@ const pubCheck = function (age, country, drunkLevel) {
             break;
     }
 
+    // Message to show check
+
+
     return canEnterPub;
 }
 
@@ -26,7 +30,7 @@ const pubCheck = function (age, country, drunkLevel) {
 
 
 /*----------  Variable Declaration  ----------*/
-
+let message = document.getElementById("message");
 
 
 /*----------  Script assignment  ----------*/
