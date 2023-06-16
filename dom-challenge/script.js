@@ -2,7 +2,8 @@
 const pubCheck = function (age, country, drunkLevel) {
     let canEnterPub = false;
     message.hidden = true;
-    message.classList.remove(['message--success', 'message--failure']);
+    message.classList.remove("message--success");
+    message.classList.remove("message--failure");
 
     // First is the country check since different countries have different drinking ages
     switch (country) {
@@ -22,7 +23,7 @@ const pubCheck = function (age, country, drunkLevel) {
     }
 
     // Message to show check
-    if (document.querySelector("#age").nodeValue === null && document.querySelector("#drunk").nodeValue === null) {
+    if (document.querySelector("#age").value === null && document.querySelector("#drunk").value === null) {
         btn.style.backgroundColor = "#ffbd4a";
         beerBottle.src = "assets/beer.svg";
         message.hidden = true;
@@ -49,12 +50,17 @@ const pubCheck = function (age, country, drunkLevel) {
 
 
 /*----------  Variable Declaration  ----------*/
+let form = document.querySelector(".form");
 let message = document.getElementById("message");
 let btn = document.getElementById("btn");
 let beerBottle = document.querySelector("img");
 
 /*----------  Script assignment  ----------*/
-btn.addEventListener("submit", pubCheck(document.querySelector("#age").nodeValue, document.querySelector("#country").value, document.querySelector("#drunk").nodeValue));
+
+form.addEventListener("submit", (event) => {
+    pubCheck(document.querySelector("#age").value, document.querySelector("#country").value, document.querySelector("#drunk").value);
+    event.preventDefault();
+});
 
 
 
