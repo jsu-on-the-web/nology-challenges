@@ -16,6 +16,17 @@ function flipKeysAndValues(obj) {
 console.log(translate);
 console.log(flipKeysAndValues(translate));
 
+// Alt 
+const swapKeys = (obj) => {
+    const keyArr = Object.keys(obj)
+    const valueArr = Object.values(obj)
+
+    return valueArr.reduce((result, value, index) => {
+        result[value] = keyArr[index]
+        return result
+    }, {})
+};
+
 /* const newObj = {
     jablko: "apple",
     gruszka: "pear",

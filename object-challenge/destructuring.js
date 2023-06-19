@@ -43,15 +43,25 @@ const recipe = {
 // @param {name: string, country: string, isVegetarian: boolean, mealIngredients: string[]}
 // @returns {name; string, country: string, isVegetarian: boolean, ingredients: string[]}
 
-const renameKey = (obj) => {
-    const object = { ...obj };
-    const { name, country, isVegetarian, mealIngredients: value } = object
-    const output = { name, country, isVegetarian, ingredients: value };
-    return output;
+// const renameKey = (obj) => {
+//     const object = { ...obj };
+//     const { name, country, isVegetarian, mealIngredients: value } = object
+//     const output = { name, country, isVegetarian, ingredients: value };
+//     return output;
+// };
+
+// console.log(renameKey(recipe));
+// console.log(recipe)
+
+
+//Another, more general function
+const renameKey = (obj, keyToRename, newKey) => {
+    const { [keyToRename]: value, ...rest } = obj; //use computed property name to pass value instead of defining new key "keyToRename"
+    const newObj = { [newKey]: value, ...rest };
+    return newObj;
 };
 
-console.log(renameKey(recipe));
-console.log(recipe)
+console.log(renameKey(recipe, "mealIngredients", "ingredients"));
 
 // 3
 
@@ -82,6 +92,16 @@ const returnFirstCity = (obj) => {
     const output = offices[0].city;
     return output;
 };
+
+
+// Another way
+// const returnFirstCity = (obj) => {
+//     const { offices, ...rest } = obj;
+//     const [first] = offices;
+//     const { city, ...rest2 } = first;
+//     return city;
+// };
+// console.log(returnFirstCity(codingSchool));
 
 console.log(returnFirstCity(codingSchool));
 
@@ -119,6 +139,7 @@ const newPostArr = (arr) => {
         }
     })
 };
+
 
 console.log(newPostArr(postsArray));
 
