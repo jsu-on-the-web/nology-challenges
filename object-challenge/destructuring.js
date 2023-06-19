@@ -122,18 +122,22 @@ const newPostArr = (arr) => {
 
 console.log(newPostArr(postsArray));
 
-// // 5
-// const forecast = {
-//     yesterday: { low: 14, high: 32 },
-//     today: { low: 18, high: 34 },
-//     tomorrow: { low: 20, high: 28 },
-// };
+// 5
+const forecast = {
+    yesterday: { low: 14, high: 32 },
+    today: { low: 18, high: 34 },
+    tomorrow: { low: 20, high: 28 },
+};
 
-// // using object destructuring, create a function that returns the value of the low temperature for today
+// using object destructuring, create a function that returns the value of the low temperature for today
 
-// // @param { yesterday: { low: number, high: number }, today: { low: number, high: number }, tomorrow: { low: number, high: number } }
+// @param { yesterday: { low: number, high: number }, today: { low: number, high: number }, tomorrow: { low: number, high: number } }
 
-// // return {number} the value of the low temperature for today
-// const getTodayLow = (obj) => { };
+// return {number} the value of the low temperature for today
+const getTodayLow = (obj) => {
+    const { today } = obj;
+    const { low, high } = today;
+    return low;
+};
 
-// console.log(getTodayLow(forecast));
+console.log(getTodayLow(forecast));
