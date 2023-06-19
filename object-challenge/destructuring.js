@@ -17,35 +17,41 @@ const getTitleAndGenre = (obj) => {
     const { title, genre } = obj;
     let genreList = genre.join(', ');
 
-    console.log(`The genres of ${title} are ${genreList}`);
+    return `The genres of ${title} are ${genreList}`;
 };
 
 // checking if returned the right value
 console.log(getTitleAndGenre(movie));
 
-// 2
-// const recipe = {
-//     name: "Spaghetti Bolognese",
-//     country: "Italy",
-//     isVegetarian: false,
-//     mealIngredients: [
-//         "Minced beef",
-//         "tomato sugo",
-//         "basil",
-//         "onion",
-//         "garlic",
-//         "parmesan",
-//     ],
-// };
+//2
+const recipe = {
+    name: "Spaghetti Bolognese",
+    country: "Italy",
+    isVegetarian: false,
+    mealIngredients: [
+        "Minced beef",
+        "tomato sugo",
+        "basil",
+        "onion",
+        "garlic",
+        "parmesan",
+    ],
+};
 
-// // Using object destructuring, create a function that renames the key of an object. It should not modify the original object.
+// Using object destructuring, create a function that renames the key of an object. It should not modify the original object.
 
-// // @param {name: string, country: string, isVegetarian: boolean, mealIngredients: string[]}
-// // @returns {name; string, country: string, isVegetarian: boolean, ingredients: string[]}
+// @param {name: string, country: string, isVegetarian: boolean, mealIngredients: string[]}
+// @returns {name; string, country: string, isVegetarian: boolean, ingredients: string[]}
 
-// const renameKey = (obj) => { };
+const renameKey = (obj) => {
+    const object = { ...obj };
+    const { name, country, isVegetarian, mealIngredients: value } = object
+    const output = { name, country, isVegetarian, ingredients: value };
+    return output;
+};
 
-// console.log(renameKey(recipe));
+console.log(renameKey(recipe));
+console.log(recipe)
 
 // // 3
 
