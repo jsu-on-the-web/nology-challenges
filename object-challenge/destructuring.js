@@ -85,34 +85,42 @@ const returnFirstCity = (obj) => {
 
 console.log(returnFirstCity(codingSchool));
 
-// // 4
+// 4
 
-// const postsArray = [
-//     {
-//         id: 123,
-//         createdBy: "user16",
-//         commentNo: 5,
-//     },
-//     {
-//         id: 456,
-//         createdBy: "user20",
-//         commentNo: 5,
-//     },
-//     {
-//         id: 789,
-//         createdBy: "user32",
-//         commentNo: 5,
-//     },
-// ];
+const postsArray = [
+    {
+        id: 123,
+        createdBy: "user16",
+        commentNo: 5,
+    },
+    {
+        id: 456,
+        createdBy: "user20",
+        commentNo: 5,
+    },
+    {
+        id: 789,
+        createdBy: "user32",
+        commentNo: 5,
+    },
+];
 
-// // given an array of post objects create a function that returns a new array of posts, each object in the new array should have keys renamed as per the example.
+// given an array of post objects create a function that returns a new array of posts, each object in the new array should have keys renamed as per the example.
 
-// // @param {{id: number, createdBy: number, commentNo: number}[]}
+// @param {{id: number, createdBy: number, commentNo: number}[]}
 
-// // @returns {{postId: number, creator: number, postComment: number}[]}
-// const newPostArr = (arr) => { };
+// @returns {{postId: number, creator: number, postComment: number}[]}
+const newPostArr = (arr) => {
+    return arr.map(post => {
+        return {
+            postId: post.id,
+            creator: post.createdBy,
+            postComment: post.commentNo
+        }
+    })
+};
 
-// console.log(newPostArr(postsArray));
+console.log(newPostArr(postsArray));
 
 // // 5
 // const forecast = {
