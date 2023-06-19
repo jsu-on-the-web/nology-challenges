@@ -53,32 +53,37 @@ const renameKey = (obj) => {
 console.log(renameKey(recipe));
 console.log(recipe)
 
-// // 3
+// 3
 
-// const codingSchool = {
-//     name: "_nology",
-//     languages: ["JavaScript", "Java"],
-//     offices: [
-//         {
-//             country: "Australia",
-//             city: "Sydney",
-//         },
-//         {
-//             country: "UK",
-//             city: "Bristol",
-//         },
-//     ],
-// };
+const codingSchool = {
+    name: "_nology",
+    languages: ["JavaScript", "Java"],
+    offices: [
+        {
+            country: "Australia",
+            city: "Sydney",
+        },
+        {
+            country: "UK",
+            city: "Bristol",
+        },
+    ],
+};
 
-// // Using destructuring, create a function that returns the city of the first office of the given company
+// Using destructuring, create a function that returns the city of the first office of the given company
 
-// // @param {name: string, languages: string[], offices: {country: string, city: string}[]}
+// @param {name: string, languages: string[], offices: {country: string, city: string}[]}
 
-// // @returns {string}  the name of the city of the first office
+// @returns {string}  the name of the city of the first office
 
-// const returnFirstCity = (obj) => { };
+const returnFirstCity = (obj) => {
+    const { offices, ...rest } = obj;
+    const [country, city] = offices;
+    const output = offices[0].city;
+    return output;
+};
 
-// console.log(returnFirstCity(codingSchool));
+console.log(returnFirstCity(codingSchool));
 
 // // 4
 
