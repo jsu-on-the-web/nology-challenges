@@ -16,5 +16,5 @@ const delayedIncDec = (n, mode, delay = 2500) => {
 }
 
 delayedIncDec(5, "inc", 1000).then((value) => { console.log(value) }).catch(err => { console.log(err) });
-delayedIncDec(20, "dec", 3000).then((value) => { console.log(value) }).catch(err => { console.log(err) });
-delayedIncDec(520, "inc").then((value) => { console.log(value) }).catch(err => { console.log(err) });
+delayedIncDec(20, "egg", 3000).then((value) => { console.log(value) }).catch(err => { console.log(err) });
+delayedIncDec(520, "dec").then((value) => { console.log(value) }).catch(err => { console.log(err) });
