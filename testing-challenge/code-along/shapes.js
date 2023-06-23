@@ -12,6 +12,8 @@
 //Non TDD approach
 export const rectangleArea = (width, height) => {
 
+    // Your order of if checks matters!
+
     if (height === undefined || width === undefined) {
         throw new Error("One or more parameters are missing");
     }
