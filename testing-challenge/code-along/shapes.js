@@ -11,16 +11,17 @@
 
 //Non TDD approach
 export const rectangleArea = (width, height) => {
-    if (height < 0 || width < 0) {
-        throw new Error("Height and width must be greater than zero");
+
+    if (height === undefined || width === undefined) {
+        throw new Error("One or more parameters are missing");
     }
 
     if (typeof width !== 'number' || typeof height !== 'number') {
         throw new Error("Width and height must be numbers");
     }
 
-    if (height === undefined || width === undefined) {
-        throw new Error("One or more parameters are missing");
+    if (height < 0 || width < 0) {
+        throw new Error("Height and width must be greater than zero");
     }
 
     return height * width;
