@@ -24,6 +24,6 @@ describe('sum tests', () => {
     it('Should sum up any number of inputs (inputs >= 1)', () => {
         expect(sum(1, 2)).toBe(3);
         expect(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)).toBe(55);
-        expect(sum(100)).toBet(100);
+        expect(sum(100)).toBe(100);
     });
 })
