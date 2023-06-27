@@ -2,14 +2,24 @@
 	border: 2px solid black;
 	width: 15rem;
 	height: 15rem;
-	background-color: rgba(231, 231, 231, 0.7);
+	background-color: rgba(0, 0, 0, 0.7);
 	background-blend-mode: overlay;
 	background-size: contain;
 
 	p {
-		color: black;
+		color: white;
 		padding-left: 2rem;
+		transition: opacity 0.5s ease-in-out;
 	}
 
 	margin: 0.5rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	p {
+		opacity: 0;
+	}
+	background-color: rgba(231, 231, 231, 0);
 }
