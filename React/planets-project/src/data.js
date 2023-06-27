@@ -1,4 +1,4 @@
-[
+export const planetsData = [
     {
         "planetName": "Mercury",
         "image": "https://space-facts.com/wp-content/uploads/mercury-v2.jpg",

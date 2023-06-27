@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import data from '../data.json'
+
 
 export function Card({ planetName = 'Planet Name', imageSrc = '', distanceFromTheSun = 0, diameterInKm = 0, numberOfMoons = 0, lengthOfYear = 0 }) {
 
